@@ -48,7 +48,7 @@ The package contains two classes documents and insurance:
 
 See below a diagram that illustrates how it works.
 
-![Insurance Claim Structure](assets/diagramAutoInsurance_bg.png)
+![Insurance Claim Structure](assets/diagramAutoInsurance_with_bg.png)
 
 ## Features
 
@@ -64,11 +64,7 @@ In this case the general project runs as described below:
 additional context that we used to generate the queries against the policy.
 3. Run the workflow to generate the recommenations.
 
-
-
-[![Video of the demo]          
-(assets/diagramAutoInsurance.png)]
-([assets/DemoApp.mov](https://github.com/germanpenna/autoinsurance/blob/main/assets/DemoApp.mov) "Demo App")  
+[Demo App](https://github.com/germanpenna/autoinsurance/blob/main/assets/DemoApp.mov)
 
 ## Contributing
 
