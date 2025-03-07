@@ -62,13 +62,13 @@ api_key="..."
 
 ```python
 base_url="...",
-#token=os.environ["LLAMA_CLOUD_API_KEY"],
+token=os.environ["LLAMA_CLOUD_API_KEY"],
 ```
 
 4. Finally, you will need a API for OpenAI. Setting it up as a environment variable.
 
 ```python
-#api_key=os.environ["OPEN_API_KEY"]
+api_key=os.environ["OPEN_API_KEY"]
 ```
 
 That's all! You are ready to go. Take into account that you can always find Open Source options or other third parties providers. You can use them. Just set the indexes
