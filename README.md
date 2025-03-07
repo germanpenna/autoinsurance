@@ -13,17 +13,12 @@ For this implementation, I configured my indexes using LlamaCloud and Amazon Bed
 
 Below are some helpful links to guide you through configuring the necessary tools for running the project:
 
-[Llama Index](https://docs.cloud.llamaindex.ai/llamacloud/getting_started/quick_start)
-[Amazon Bedrock Embeddings](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html)
-[OpenAI API](https://openai.com/api/)
+1. [Llama Index](https://docs.cloud.llamaindex.ai/llamacloud/getting_started/quick_start)
+2. [Amazon Bedrock Embeddings](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-embedding-models.html)
+3. [OpenAI API](https://openai.com/api/)
 
 In each case, you'll find tests included to ensure everything is functioning correctly. I recommend reviewing all the provided links and taking the time to 
 thoroughly test each solution.
-
-### Initial Configuration
-
-Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
-This is the section where you would document those requirements.
 
 ## Running the project
 
@@ -38,6 +33,52 @@ cd autoinsurance/
 need to be configured.
 
 3. I’ve structured the project into a package to streamline the setup process and ensure a smooth deployment.
+
+### Setup and Running
+
+1. Replace the keys for your policy index in the insuranceApp file as mentioned in this block.
+
+```python
+#Configure your index in Llama and add the parameters as stated after setting up.
+#You can also use another Open Source solutions such as Qdrant
+name="...", 
+project_name="...",
+organization_id="...",
+api_key="..."
+```
+
+2. Repeat the same process to initialize the index of declarations
+
+```python
+#Configure your index in Llama and add the parameters as stated after setting up.
+#You can also use another Open Source solutions such as Qdrant
+name="...", 
+project_name="...",
+organization_id="...",
+api_key="..."
+```
+
+3. Configure the token to access to LlamaCloud. You can use a environment variable as suggested in the code
+
+```python
+base_url="...",
+#token=os.environ["LLAMA_CLOUD_API_KEY"],
+```
+
+4. Finally, you will need a API for OpenAI. Setting it up as a environment variable.
+
+```python
+#api_key=os.environ["OPEN_API_KEY"]
+```
+
+That's all! You are ready to go. Take into account that you can always find Open Source options or other third parties providers. You can use them. Just set the indexes
+and keys, and check any additional requirement you eventually need to set this up.
+
+To run the project, in the console, run the next command
+
+```shell
+python -m streamlit run insuranceApp.py
+```
 
 ### Pachage Claim
 
